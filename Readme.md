@@ -1,4 +1,4 @@
-# Today's Objective: A personal NPM Utility library
+# Today's Objective: Noisemaker!
 
 ## Prize
 
@@ -8,57 +8,53 @@ Tip: Read the [General Information Document](General%20Information.md) for more 
 
 ## Objective
 
-Today's objective is to build and publish a personal NPM package.
+Today's objective is to create a music instrument, audio toy, or noisemaker.
 
-As developers learn and grow, they acquire habits. They start solving problems in tried-and-tested ways, eventually becoming very familiar with certain design patterns over others. As they work across projects, they write the same solutions over and over again, sometimes even copying-pasting old solutions from previous projects into new ones. Like fingerprints, they leave a trail of these similar design patterns behind them as they move through their careers.
+Over the years, audio has fallen out of favour for mainstream web applications and websites for a variety of reasons, including accessibility, design, and user experience. 
 
-Instead, wouldn't it be nice if you could just create a lightweight package that you could `npm install` into any project?
+But rich, interactive web experiences still make full use of Audio APIs. Audio has been a part of browser experiences for decades.
 
-That is what we will do today.
+Here are some cool examples of the Web Audio API in action.
+
+* https://keithwhor.com/music/
+* https://stuartmemo.com/qwerty-hancock/
+* https://stuartmemo.com/smashing-magazine/theremin/
 
 ## Requirements
 
-1. Create a personal [npm](https://npmjs.com) library.
-1. Fill it with methods you would find useful in future projects.
-1. Publish it to `npm` (you may have to sign up for an `npm` account).
-1. Demonstrate that it can be `require`d right from `npm`, by building a project using Runkit or Codepen
+Use the Web Audio API (or a library that wraps around it) to make a musical instrument, audio toy, or a noisemaker.
 
-## Special requirements for today's hackathon:
+The only hard requirement are these: 
+1. Sound must be made in response to user interaction. I.e., you cannot create a simple audio player. Your app must respond to user action events.
+2. You must use the Web Audio API, either directly or indirectly.
 
-*Aesthetics*: There is no visual component to today's project. Your score will be determined by your module's beauty. i.e. by the method names, number of parameters, whether they are functions or classes, namespaces within your package, and how lightweight the imported module is, etc.
+The requirements are intentionally open-ended to allow developers to create an app that suits their skill level.
 
-The more methods you put in your package, the better.
+Here are some examples of applications you might decide to make:
 
-*Deployment*:
+* (Easy  ) A button that creates a sound when the user clicks on it
+* (Easy  ) An area that creates noise as the user drags their mouse over it (see [Theremin](https://stuartmemo.com/smashing-magazine/theremin/))
+* (Medium) A simple synthesizer
+* (Hard  ) A drum machine
+* (Hard  ) A simple game with interesting audio sound effects
 
-Videos and screenshots will not be accepted. You must leave links to:
+## If you want to win
 
-1. Your NPM package
-2. A deployed project on Runkit or Codepen.
+Remember: learning is the main reward here. Competing is fun and encouraged, but optional.
 
+However, if you'd like to seriously compete, then keep in mind that more complex and interesting applications will stand a better chance of winning.
 
-Your deployment options for #2 above are:
+### Suggested Libraries
 
-1. Runkit - You will have to sign up and create a new notebook. See the example [Runkit Notebooks](https://runkit.com/monarchwadia). 
-2. Codepen - You can import your project into Codepen using [unpkg](https://unpkg.com/)
-
-## Bonus points
-
-Bonus points will be awarded for:
-* Creating a typescript-compatible project
-* Creating unit tests
-* Using a precompiler (only if appropriate, i.e. if you are using Typescript or Babel, or if you are creating a React library)
-* Leaving detailed instructions for local development on `Readme.md`
-* Writing documentation (for your future self's benefit)
+[ToneJS](https://github.com/Tonejs/Tone.js/) is a pretty good library that you can use. There are others, but this is one of the simpler ones.
 
 ## Frameworks:
 
-Any or none. You can create a personal library with just plain JavaScript. You can also create a personal library that contains common React/Vue/Angular components that you find yourself using often across projects.
+We recommend you keep it simple and use what you already know. It is completely possible to build this using jQuery. You can use React, Vue, Angular if you wish.
 
-## Restrictions
+## Technology Restrictions
 
-* Your project must use JavaScript.
-* You must follow deployment instructions above.
+* Your project must use JavaScript in a browser environment.
 
 There are no other restrictions.
 
@@ -67,10 +63,4 @@ There are no other restrictions.
 1. The project is intentionally simple so you can focus on code quality.
 1. The requirements are intentionally minimalistic so you can get as creative as you'd like.
 1. You get a LOT of time for code review comments. So you can win even if you feel your project isn't great, simply on the strength of your code review comments!
-1. Keep in mind, 33% of your score is based on aesthetic appeal!
-
-## Resources
-
-* [Creating and publishing unscoped public packages](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages)
-* [Video - Creating & publishing your own NPM modules](https://www.youtube.com/watch?v=rTsz09zRuTU)
-* [freeCodeCamp's Tutorial](https://www.freecodecamp.org/news/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78/)
+1. Keep in mind, 33% of your score is based on aesthetic appeal! So try to make it look nice.
